@@ -1,0 +1,27 @@
+two portals student, company
+
+Student 
+Home page - register as student button (opens up sign up page)
+Sign up: Full Name, Batch, current CPI, Techstacks, age, gender,resume, email, password
+Login: email,password
+update student, delete
+
+Filter on basis of :   1.batch    2.CPI    3.Techstacks
+- Student can register in that company (sign up details)
+
+
+Company
+Home Page - resgister as company (opens up sign up page)
+Sign up/Add company: Company name, official website, email, password, criteria (batch+teckstaks+cpi)
+Login
+
+update company, delete company
+
+can see details of interested students (can mail directly to student if interested)
+
+
+
+
+
+
+
