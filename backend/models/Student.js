@@ -2,35 +2,43 @@ const mongoose = require('mongoose');
 const { ObjectId } = mongoose.Schema;
 const StudentSchema = new mongoose.Schema({
    fullname:{
-    type: String
+    type: String,
+    
    },
   email:
    {
-    type:String
+    type:String,
+    unique:true
    },
    password:
    {
-    type:String
+    type:String,
+    
    },
    cpi:
    {
-    type:mongoose.Types.Decimal128
+    type:mongoose.Types.Decimal128,
+    
    },
    batch:
    {
-    type:String
+    type:String,
+    
    },
    age:
    {
-    type:Number
+    type:Number,
+    
    },
    gender:
    {
-    type:String
+    type:String,
+    
    },
-   techstacks:
+   techstack:
    {
-    type:String
+    type:String,
+    
    }
 });
 

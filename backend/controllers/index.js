@@ -20,12 +20,7 @@ const registerstudent = async(req,res)=>{
     }
     else
     {
-      return res.status(200).json({
-        data:student,
-        success:true,
-        error:""
-
-      });
+      return res.render("studentdetails",{data:student});
     }
   })
   
@@ -132,4 +127,18 @@ catch(error)
 
 }
 
-module.exports = {getHome,registerstudent,loginstudent,registercompany,logincompany};
+const addStudent = (req,res)=>{
+  res.render("student");
+}
+
+const addCompany = (req,res)=>{
+  res.render("company");
+}
+
+// const getStudent = async (req,res)=>{
+//   const student = await Student.findOne({email:req.body.email});
+//   console.log(req.body.email);
+//   res.render("studentdetails",{data:student});
+// }
+
+module.exports = {getHome,registerstudent,loginstudent,registercompany,logincompany,addStudent,addCompany};
